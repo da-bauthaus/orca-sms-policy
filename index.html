@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bauthaus ORCA — SMS Messaging Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --surface: #141414;
+      --border: #2a2a2a;
+      --text: #e8e8e8;
+      --muted: #888;
+      --accent: #c8f542;
+      --font-mono: 'IBM Plex Mono', monospace;
+      --font-sans: 'IBM Plex Sans', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.75;
+      padding: 60px 24px 100px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+      margin-bottom: 48px;
+    }
+
+    .wordmark {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: var(--font-mono);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .meta {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: #c8c8c8;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #c8c8c8;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-family: var(--font-mono);
+    }
+
+    .keyword-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      margin-top: 12px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.9;
+    }
+
+    .keyword-block span {
+      color: var(--accent);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      margin-top: 60px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="wordmark">Bauthaus</div>
+      <h1>SMS Messaging Policy<br>Privacy &amp; Terms of Service</h1>
+      <div class="meta">Effective date: April 2026 &nbsp;·&nbsp; ORCA Automated Trading Alert System</div>
+    </header>
+
+    <section>
+      <h2>About This Service</h2>
+      <p>Bauthaus operates ORCA, a proprietary automated options trading system. This SMS messaging service delivers real-time trading alerts — including position risk notifications, profit target events, and expiration warnings — to the sole operator of the system.</p>
+      <p>This is an internal, single-recipient notification service. No marketing messages are sent. No third parties receive messages.</p>
+    </section>
+
+    <section>
+      <h2>Message Types</h2>
+      <ul>
+        <li>Position profit target alerts</li>
+        <li>Assignment risk and strike proximity warnings</li>
+        <li>Theta decay milestone notifications</li>
+        <li>Expiration and time-sensitive position reminders</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data Collection &amp; Use</h2>
+      <p>The only personal data collected is the recipient's mobile phone number, used exclusively to deliver trading alerts. No data is sold, shared, or transferred to any third party. Message delivery is handled via Twilio. No analytics or marketing profiling is performed.</p>
+    </section>
+
+    <section>
+      <h2>Opt-In</h2>
+      <p>The sole recipient of these messages is the owner and operator of the ORCA system. Enrollment is self-configured within the application. By configuring a destination number within the system, the operator consents to receive automated alerts from that system.</p>
+    </section>
+
+    <section>
+      <h2>Opt-Out &amp; Help Keywords</h2>
+      <div class="keyword-block">
+        <span>STOP</span> — Immediately unsubscribes the number from all alerts.<br>
+        <span>UNSTOP / START</span> — Re-subscribes the number to alerts.<br>
+        <span>HELP</span> — Returns support contact information.<br><br>
+        Standard message and data rates may apply.
+      </div>
+    </section>
+
+    <section>
+      <h2>Terms &amp; Conditions</h2>
+      <p>Messages generated by the ORCA system are automated notifications only. They do not constitute financial advice. All trading decisions remain solely the responsibility of the operator.</p>
+      <p>Bauthaus reserves the right to modify or discontinue this messaging service at any time. This policy may be updated without prior notice; the effective date above reflects the most recent revision.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For questions regarding this policy or SMS messaging:<br>
+      <a href="mailto:dandersen@bauthaus.com">dandersen@bauthaus.com</a></p>
+    </section>
+
+    <footer>
+      &copy; 2026 Bauthaus &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp; ORCA v1.0
+    </footer>
+
+  </div>
+</body>
+</html>
